@@ -16,6 +16,7 @@ dat$temp = dat$temp + 273.15
 
 LSRL = lm(dat$lvl ~ dat$temp)
 print(LSRL)
+summary(LSRL)
 print(cor(dat$lvl, dat$temp))
 b = cor(dat$lvl, dat$temp) * sd(dat$lvl) / sd(dat$temp)
 print(b)
